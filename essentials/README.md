@@ -40,8 +40,70 @@ Body
 # JSON
 
 
+JSON stands for JavaScript Object Notation
+
+JSON is a lightweight format for storing and transporting data
+
+JSON is often used when data is sent from a server to a web page
+
+JSON is "self-describing" and easy to understand
+
+JSON data is written as name/value pairs
+
+Data types:
+* Key can be:
+  * string
+* value can be:
+  * string
+  * number (not inside curly braces)
+  * bool (not inside curly braces)
+  * object
+  * null (not inside curly braces)
+
+Working with JSON:
+* Serializing
+  * It's the process of transforming objects into JSON
+* Deserialize
+  * It's the process of transforming JSON into objects
+
+JSON objects are written inside curly braces 
+
+
 ``` json
 {
-    "hello" : "world"
+	"name": "Karl de Castro Fonseca",
+	"age": "29",
+	"home-office": true,
+	"programmer": null,
+	"job": {
+		"name": "Solutions Architect",
+		"level": 4,
+    "tasks": 
+    [
+			"Cloud Custodian Policies Creation",
+			"Secrets management",
+			"Automation",
+			"Learning",
+			"Training"
+		]
+	}
 }
+
 ```
+
+## Notes
+
+* Extra reading:
+  * [What is Json?](https://www.w3schools.com/whatis/whatis_json.asp)
+* Resources:
+  * [JSON Editor](http://jsoneditoronline.org/)
+  * [JSON Lint](https://jsonlint.com/)
+  * [Star Wars API](https://swapi.dev/)
+    * [Documentation](https://swapi.dev/documentation)
+
+# YAML
+
+
+
+## Notes
+
