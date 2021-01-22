@@ -71,22 +71,22 @@ JSON objects are written inside curly braces
 
 ``` json
 {
-	"name": "Karl de Castro Fonseca",
-	"age": "29",
-	"home-office": true,
-	"programmer": null,
-	"job": {
-		"name": "Solutions Architect",
-		"level": 4,
-    "tasks": 
-    [
-			"Cloud Custodian Policies Creation",
-			"Secrets management",
-			"Automation",
-			"Learning",
-			"Training"
-		]
-	}
+    "name": "Karl de Castro Fonseca",
+    "age": "29",
+    "home-office": true,
+    "programmer": false,
+    "job": {
+        "name": "Solutions Architect",
+        "level": 4,
+        "tasks": 
+        [
+          "Cloud Custodian Policies Creation",
+          "Secrets management",
+          "Automation",
+          "Learning",
+          "Training"
+        ]
+    }
 }
 
 ```
@@ -95,6 +95,7 @@ JSON objects are written inside curly braces
 
 * Extra reading:
   * [What is Json?](https://www.w3schools.com/whatis/whatis_json.asp)
+  * [JSON Introduction](https://www.w3schools.com/js/js_json_intro.asp)
 * Resources:
   * [JSON Editor](http://jsoneditoronline.org/)
   * [JSON Lint](https://jsonlint.com/)
@@ -103,7 +104,61 @@ JSON objects are written inside curly braces
 
 # YAML
 
+YAML Ain’t Markup Language (YAML) is a serialization language that has steadily increased in popularity over the last few years. It’s often used as a format for configuration files, but its object serialization abilities make it a viable replacement for languages like JSON
 
 
+
+The design goals for YAML are, in decreasing priority:
+
+1. YAML is easily readable by humans.
+2. YAML data is portable between programming languages.
+3. YAML matches the native data structures of agile languages.
+4. YAML has a consistent model to support generic tools.
+5. YAML supports one-pass processing.
+6. YAML is expressive and extensible.
+7. YAML is easy to implement and use.
+
+Structure and Collections:
+
+\-\-\- = Indicates content separation inside the same YAML file
+
+* Collections:
+  * Utilizes indentation to define code blocks (2 spaces)
+  * A block of collections starts with ("- ")
+  * Mapping utilizes ":" and a space " " for each element. Ex: key: value
+  * For comments, use #
+
+YAML anchors and aliases
+
+* Anchors:
+  * & - defines the configuration
+  * * - is used to reference the configuration
+
+```yaml
+tarefas: &job-assignments
+  - Compliance enforcement
+  - Security Scans (Cloud Custodian)
+  - Troubleshoot
+  - Risk analysis
+  - Secrets Management (Vault)
+
+person:
+  name: karl
+  company: gft
+  job-title: Solutions Architect
+  programmer: false
+  home-office: true
+  tasks: *job-assignments
+
+```
 ## Notes
 
+* Extra reading:
+  * [YAML Tutorial Quick Start](https://rollout.io/blog/yaml-tutorial-everything-you-need-get-started/)
+  * [YAML official doc](https://yaml.org/spec/1.2/spec.html)
+    * [YAML Goals](https://yaml.org/spec/1.2/spec.html#id2708649)
+    * [YAML Collections](https://yaml.org/spec/1.2/spec.html#id2759963)
+    * [YAML Structure](https://yaml.org/spec/1.2/spec.html#id2760395)
+    * [YAML Anchors and Aliases](https://yaml.org/spec/1.2/spec.html#id2765878)
+    * [YAML-online-parser](https://yaml-online-parser.appspot.com/)
+    * [YAML lint](http://www.yamllint.com/)
