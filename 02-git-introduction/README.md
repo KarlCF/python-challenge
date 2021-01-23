@@ -21,6 +21,18 @@ Git file states:
 * Modified
 * Staged
 
+.gitignore file:
+* Important prevent certain information from being pushed to VCS:
+  * Sensitive info (Passwords, Access Keys, Tokens, etc.)
+  * Packages, which would bloat code size
+
+Removing files after being versioned:
+* git rm $FILE_NAME
+  * removes local file and from versioning
+* git rm --cached $FILE_NAME
+  * removes only from versioning
+
+
 ## Notes
 
 * Extra reading:
@@ -30,6 +42,10 @@ Git file states:
     * [git config](https://git-scm.com/docs/git-config)
   * [git - Videos](https://git-scm.com/videos)
   * [git - cheatsheet(cheat.sh)](http://cheat.sh/git)
+  * [.gitignore -  !!! IMPORTANT !!!](https://www.w3docs.com/learn-git/gitignore.html)
+  * [git sync/remote](https://www.w3docs.com/learn-git/introduction3.html)
+  * [Generating SSH key and adding it to the ssh-agent](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+  * [git branch](https://www.w3docs.com/learn-git/introduction5.html)
 * Extra resources:
   * [learn git branching - !!! IMPORTANT !!!](https://learngitbranching.js.org/)
 
@@ -60,4 +76,19 @@ Git file states:
 * git reset
   * reset current HEAD to the specified state
   * git reset HEAD
+  * git reset --mixed $commit-id
+  * git reset --soft $commit-id
+  * git reset --hard $commit-id
+* git remote add origin $REPO_URL
+  * add a remote repository as origin
+* git remote -v
+  * to check remote configuration
+* git push -u origin master
+  * push local files to remote versioning
+* git pull
+  * fetch from and integrate with another repository or a local branch
+* git remote set-url origin $REMOTE_URL
+  * change the URL on local repository
+* git clone $REMOTE_URL $FOLDER_NAME
+  * downloads data from remote repository, if FOLDER_NAME is empty, it retains the remote repository nomenclature
 * 
