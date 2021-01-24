@@ -91,4 +91,13 @@ Removing files after being versioned:
   * change the URL on local repository
 * git clone $REMOTE_URL $FOLDER_NAME
   * downloads data from remote repository, if FOLDER_NAME is empty, it retains the remote repository nomenclature
-* 
+* git branch
+  * list branches
+  * git branch -D $BRANCH_NAME
+    * Deletes branch
+* git checkout -b $BRANCH_NAME
+  * creates a new branches and sets it as current
+* git merge
+  * Join two or more development histories together
+* git push oirigin --delete $BRANCH_NAME
+  * deletes remote branch
