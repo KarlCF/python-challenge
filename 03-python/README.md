@@ -85,6 +85,19 @@ ut labore et dolore magna aliqua."""
   * Removing spaces and characters: strip(), lstrip(), rstrip()
   * Getting characters by index: [0:2], [:2]
   * Use operators: IN and NOT IN
+
+String Manipulation:
+* Concatenation
+  * Only between strings
+* Interpolation:
+  * Markers Method (%d, %s and %f)
+    * %d - Int
+    * %f - Float
+    * %s - String
+  * Format Method
+    * print ('My name is {}'.format(name))
+  * F-string Method
+    * Only on Python 3.6+
 ## Notes
 
 * Extra reading:
@@ -97,8 +110,13 @@ ut labore et dolore magna aliqua."""
     * Max size of line: 79 chars
     * Blank lines: Use with care
     * Import should be used in separate lines
-  * [Python Data Types](https://www.w3schools.com/python/python_datatypes.asp)
-  * [Python Variables](https://www.w3schools.com/python/python_variables.asp)
+  * [Data Types](https://www.w3schools.com/python/python_datatypes.asp)
+  * [Variables](https://www.w3schools.com/python/python_variables.asp)
   * [Arithmetic Operators](https://www.geeksforgeeks.org/python-operators/)
-  * [Python Strings](https://www.w3schools.com/python/python_strings.asp)
+  * [Strings](https://www.w3schools.com/python/python_strings.asp)
+  * [Modify Strings](https://www.w3schools.com/python/python_strings_modify.asp)
+  * [Concatenate Strings](https://www.w3schools.com/python/python_strings_concatenate.asp)
+  * [Format Strings](https://www.w3schools.com/python/python_strings_format.asp)
+  * [String Methods](https://www.w3schools.com/python/python_strings_methods.asp)
+  * [User input](https://www.w3schools.com/python/python_user_input.asp)
   * 
