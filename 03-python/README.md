@@ -119,4 +119,9 @@ String Manipulation:
   * [Format Strings](https://www.w3schools.com/python/python_strings_format.asp)
   * [String Methods](https://www.w3schools.com/python/python_strings_methods.asp)
   * [User input](https://www.w3schools.com/python/python_user_input.asp)
+  * [While Loops](https://www.w3schools.com/python/python_while_loops.asp)
+  * [Conditions](https://www.w3schools.com/python/python_conditions.asp)
+    * The form if-if-if tests all conditions, whereas the if-elif-else tests only as many as needed: if it finds one condition that is True, it stops and doesn't evaluate the rest. In other words: if-elif-else is used when the conditions are mutually exclusive.
+  * [Lists](https://www.w3schools.com/python/python_lists.asp)
+    * [List Methods](https://www.programiz.com/python-programming/methods/list)
   * 
