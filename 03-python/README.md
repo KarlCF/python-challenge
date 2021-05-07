@@ -98,6 +98,37 @@ String Manipulation:
     * print ('My name is {}'.format(name))
   * F-string Method
     * Only on Python 3.6+
+
+JSON:
+* Serialize
+  * The process of transforming objects into JSON
+  * Methods:
+    * dump() - Transforms the object into python to write into a JSON file (**See conversion table bellow for reference**)
+    * dumps() - If you have a Python object, you can convert it into a JSON string by using the json.dumps() method. (**See conversion table bellow for reference**)
+* Deserialize
+  * The process of transforming JSON into objects
+  * Methods:
+    * load() - Deserialize fp (a .read()-supporting text file or binary file containing a JSON document) to a Python object (**See conversion table bellow for reference**)
+    * Deserialize s (a str, bytes or bytearray instance containing a JSON document) to a Python object (**See conversion table bellow for reference**)
+
+## Conversion table:
+
+---
+
+| JSON | Python |
+| --- | --- |
+| JSON | Python |
+| object | dict |
+| array | list |
+| string | str |
+| number (int) | int |
+| number (real) | float |
+| true | True |
+| false | False |
+| null | None |
+
+---
+
 ## Notes
 
 * Extra reading:
@@ -111,17 +142,29 @@ String Manipulation:
     * Blank lines: Use with care
     * Import should be used in separate lines
   * [Data Types](https://www.w3schools.com/python/python_datatypes.asp)
+    * [Strings](https://www.w3schools.com/python/python_strings.asp)
+      * [Modify Strings](https://www.w3schools.com/python/python_strings_modify.asp)
+      * [Concatenate Strings](https://www.w3schools.com/python/python_strings_concatenate.asp)
+      * [Format Strings](https://www.w3schools.com/python/python_strings_format.asp)
+      * [String Methods](https://www.w3schools.com/python/python_strings_methods.asp)
+    * [Lists](https://www.w3schools.com/python/python_lists.asp)
+      * [List Methods](https://www.programiz.com/python-programming/methods/list)
+    * [Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
+    * [Tuples](https://www.w3schools.com/python/python_tuples.asp)
+    * [Sets](https://www.w3schools.com/python/python_sets.asp)
   * [Variables](https://www.w3schools.com/python/python_variables.asp)
   * [Arithmetic Operators](https://www.geeksforgeeks.org/python-operators/)
-  * [Strings](https://www.w3schools.com/python/python_strings.asp)
-  * [Modify Strings](https://www.w3schools.com/python/python_strings_modify.asp)
-  * [Concatenate Strings](https://www.w3schools.com/python/python_strings_concatenate.asp)
-  * [Format Strings](https://www.w3schools.com/python/python_strings_format.asp)
-  * [String Methods](https://www.w3schools.com/python/python_strings_methods.asp)
+
   * [User input](https://www.w3schools.com/python/python_user_input.asp)
   * [While Loops](https://www.w3schools.com/python/python_while_loops.asp)
   * [Conditions](https://www.w3schools.com/python/python_conditions.asp)
     * The form if-if-if tests all conditions, whereas the if-elif-else tests only as many as needed: if it finds one condition that is True, it stops and doesn't evaluate the rest. In other words: if-elif-else is used when the conditions are mutually exclusive.
-  * [Lists](https://www.w3schools.com/python/python_lists.asp)
-    * [List Methods](https://www.programiz.com/python-programming/methods/list)
-  * 
+  * [Built-In Functions](https://www.w3schools.com/python/python_ref_functions.asp)
+    * [Range()](https://www.w3schools.com/python/ref_func_range.asp)
+  * [Enumerate](https://www.w3schools.com/python/ref_func_enumerate.asp)
+  * [File Handling](https://www.w3schools.com/python/python_file_handling.asp)
+  * [JSON - W3](https://www.w3schools.com/python/python_json.asp) / [JSON - Python docs](https://docs.python.org/3/library/json.html)
+    * [Dump() vs Dumps()](https://www.geeksforgeeks.org/python-difference-between-json-dump-and-json-dumps/)
+    * [Working With JSON Data in Python](https://www.geeksforgeeks.org/working-with-json-data-in-python/)
+    * [Python JSON Parsing using json.load() and loads()](https://pynative.com/python-json-load-and-loads-to-parse-json/)
+    * [JSON Lib - Python Docs](https://docs.python.org/3/library/json.html)

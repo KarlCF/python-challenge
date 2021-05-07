@@ -99,5 +99,5 @@ Removing files after being versioned:
   * creates a new branches and sets it as current
 * git merge
   * Join two or more development histories together
-* git push oirigin --delete $BRANCH_NAME
+* git push origin --delete $BRANCH_NAME
   * deletes remote branch
